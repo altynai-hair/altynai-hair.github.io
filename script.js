@@ -1,24 +1,50 @@
 (function () {
   'use strict';
 
-  // ===== #11 Page Loader =====
+  // ===== #11 Page Loader — waits for critical images =====
   var loader = document.getElementById('loader');
   var loaderBar = loader ? loader.querySelector('.loader-bar') : null;
+  var loaderDone = false;
 
   function hideLoader() {
-    if (loader) loader.classList.add('is-done');
+    if (loaderDone) return;
+    loaderDone = true;
+    if (loaderBar) loaderBar.style.width = '100%';
+    setTimeout(function () {
+      if (loader) loader.classList.add('is-done');
+    }, 350);
   }
 
   if (loaderBar) {
-    loaderBar.style.width = '70%';
-    window.addEventListener('load', function () {
-      loaderBar.style.width = '100%';
-      setTimeout(hideLoader, 400);
+    loaderBar.style.width = '30%';
+
+    var heroImg = document.querySelector('.hero-image img');
+    var criticalImages = heroImg ? [heroImg] : [];
+    var loaded = 0;
+    var total = criticalImages.length || 1;
+
+    function onImageProgress() {
+      loaded++;
+      var pct = 30 + (loaded / total) * 60;
+      loaderBar.style.width = Math.min(pct, 90) + '%';
+      if (loaded >= total) hideLoader();
+    }
+
+    criticalImages.forEach(function (img) {
+      if (img.complete && img.naturalWidth > 0) {
+        onImageProgress();
+      } else {
+        img.addEventListener('load', onImageProgress);
+        img.addEventListener('error', onImageProgress);
+      }
     });
-    setTimeout(function () {
-      loaderBar.style.width = '100%';
-      setTimeout(hideLoader, 300);
-    }, 2500);
+
+    window.addEventListener('load', function () {
+      loaderBar.style.width = '95%';
+      setTimeout(hideLoader, 200);
+    });
+
+    setTimeout(hideLoader, 4000);
   }
 
   gsap.registerPlugin(ScrollTrigger);

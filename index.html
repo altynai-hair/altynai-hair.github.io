@@ -16,6 +16,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" type="image/webp" href="altynai/no_back_img3.webp">
+  <link rel="preload" as="image" type="image/webp" href="altynai/IMG_2328.webp">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -87,7 +89,10 @@
           </div>
         </div>
         <div class="hero-image" data-animate="fade-up">
-          <img src="altynai/no_back_img3.png" alt="Алтынай Зарылбекова — парикмахер-стилист" width="540" height="720">
+          <picture>
+            <source srcset="altynai/no_back_img3.webp" type="image/webp">
+            <img src="altynai/no_back_img3.png" alt="Алтынай Зарылбекова — парикмахер-стилист" width="540" height="720">
+          </picture>
         </div>
       </div>
       <div class="hero-scroll-hint" aria-hidden="true"><span></span></div>
@@ -105,8 +110,8 @@
         <!-- #2 Before/After slider -->
         <div class="about-img-col" data-animate="reveal-img">
           <div class="ba-slider" id="ba-slider">
-            <img src="altynai/IMG_2328.JPG" alt="До" class="ba-before" draggable="false">
-            <img src="altynai/IMG_2329.JPG" alt="После" class="ba-after" draggable="false">
+            <picture><source srcset="altynai/IMG_2328.webp" type="image/webp"><img src="altynai/IMG_2328.JPG" alt="До" class="ba-before" draggable="false"></picture>
+            <picture><source srcset="altynai/IMG_2329.webp" type="image/webp"><img src="altynai/IMG_2329.JPG" alt="После" class="ba-after" draggable="false"></picture>
             <div class="ba-handle" id="ba-handle">
               <div class="ba-line"></div>
               <div class="ba-circle">
@@ -217,12 +222,12 @@
         <h2 class="section-heading" data-animate="split">Результаты учениц</h2>
       </div>
       <div class="gallery-track">
-        <div class="gallery-item"><img src="altynai/IMG_2326.JPG" alt="Работа 1" loading="lazy"></div>
-        <div class="gallery-item"><img src="altynai/IMG_2327.JPG" alt="Работа 2" loading="lazy"></div>
-        <div class="gallery-item"><img src="altynai/IMG_2328.JPG" alt="Работа 3" loading="lazy"></div>
-        <div class="gallery-item"><img src="altynai/IMG_2329.JPG" alt="Работа 4" loading="lazy"></div>
-        <div class="gallery-item"><img src="altynai/no_back_img.png" alt="Работа 5" loading="lazy"></div>
-        <div class="gallery-item"><img src="altynai/no_back_img2.png" alt="Работа 6" loading="lazy"></div>
+        <div class="gallery-item"><picture><source srcset="altynai/IMG_2326.webp" type="image/webp"><img src="altynai/IMG_2326.JPG" alt="Работа 1" loading="lazy"></picture></div>
+        <div class="gallery-item"><picture><source srcset="altynai/IMG_2327.webp" type="image/webp"><img src="altynai/IMG_2327.JPG" alt="Работа 2" loading="lazy"></picture></div>
+        <div class="gallery-item"><picture><source srcset="altynai/IMG_2328.webp" type="image/webp"><img src="altynai/IMG_2328.JPG" alt="Работа 3" loading="lazy"></picture></div>
+        <div class="gallery-item"><picture><source srcset="altynai/IMG_2329.webp" type="image/webp"><img src="altynai/IMG_2329.JPG" alt="Работа 4" loading="lazy"></picture></div>
+        <div class="gallery-item"><picture><source srcset="altynai/no_back_img.webp" type="image/webp"><img src="altynai/no_back_img.png" alt="Работа 5" loading="lazy"></picture></div>
+        <div class="gallery-item"><picture><source srcset="altynai/no_back_img2.webp" type="image/webp"><img src="altynai/no_back_img2.png" alt="Работа 6" loading="lazy"></picture></div>
       </div>
     </section>
 
@@ -338,7 +343,7 @@
       <div class="container author-inner">
         <div class="author-photo-col" data-animate="reveal-img">
           <div class="img-reveal-wrap">
-            <img src="altynai/IMG_2327.JPG" alt="Алтынай Зарылбекова" loading="lazy" width="480" height="600">
+            <picture><source srcset="altynai/IMG_2327.webp" type="image/webp"><img src="altynai/IMG_2327.JPG" alt="Алтынай Зарылбекова" loading="lazy" width="480" height="600"></picture>
           </div>
         </div>
         <div class="author-text-col">
