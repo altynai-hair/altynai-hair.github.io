@@ -1,508 +1,454 @@
 <!DOCTYPE html>
-<html lang="ky">
-
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Altynai — Чач Тармактоо Курсу</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Алтынай Зарылбекова — парикмахер-стилист, 10+ лет опыта. Онлайн-курсы: уход, окрашивание, стрижки, укладки. Учитесь дома.">
+  <title>Алтынай — Парикмахер-стилист | Онлайн-курсы</title>
+
+  <!-- #14 Open Graph -->
+  <meta property="og:title" content="Алтынай — Онлайн-курсы парикмахерского дела">
+  <meta property="og:description" content="От ухода за волосами до стрижек и укладок — освойте профессию салонного мастера, не выходя из дома. 10+ лет опыта.">
+  <meta property="og:image" content="altynai/no_back_img3.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <!-- Floating particles background -->
-    <div class="particles" id="particles"></div>
 
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#hero" class="nav-logo">Altynai</a>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#hero" class="nav-link">Башкы</a></li>
-                <li><a href="#about" class="nav-link">Мен жөнүндө</a></li>
-                <li><a href="#courses" class="nav-link">Курстар</a></li>
-                <li><a href="#gallery" class="nav-link">Галерея</a></li>
-                <li><a href="#contact" class="nav-link">Байланыш</a></li>
-            </ul>
-        </div>
-    </nav>
+  <!-- #11 Page Loader -->
+  <div class="loader" id="loader"><div class="loader-bar"></div></div>
 
-    <!-- Hero Section -->
+  <!-- Custom cursor -->
+  <div class="cursor" aria-hidden="true">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">Altynai<span>Hair</span></a>
+      <nav class="nav" id="nav">
+        <a href="#about" class="nav-link">О курсе</a>
+        <a href="#program" class="nav-link">Программа</a>
+        <a href="#pricing" class="nav-link">Тарифы</a>
+        <a href="#author" class="nav-link">Автор</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#pricing" class="nav-link nav-cta">Записаться</a>
+      </nav>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
     <section class="hero" id="hero">
-        <div class="hero-bg-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
-            <div class="shape shape-4"></div>
-        </div>
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-badge animate-on-scroll">✨ Онлайн Курс</div>
-                <h1 class="hero-title animate-on-scroll">
-                    <span class="title-line">Сулуулукту</span>
-                    <span class="title-line gradient-text">жаратууну</span>
-                    <span class="title-line">үйрөнүңүз</span>
-                </h1>
-                <p class="hero-subtitle animate-on-scroll">Профессионалдуу чач тармактоо, боёо жана прическа жасоо
-                    курсу. Үйдөн чыкпай эле кесипти өздөштүрүңүз!</p>
-                <div class="hero-buttons animate-on-scroll">
-                    <a href="#courses" class="btn btn-primary">
-                        <span>Курстарды көрүү</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7" />
-                        </svg>
-                    </a>
-                    <a href="https://www.instagram.com/altynai_vizazhist" target="_blank" rel="noopener noreferrer"
-                        class="btn btn-outline">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <rect x="2" y="2" width="20" height="20" rx="5" />
-                            <circle cx="12" cy="12" r="5" />
-                            <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" />
-                        </svg>
-                        <span>Instagram</span>
-                    </a>
-                </div>
-                <div class="hero-stats animate-on-scroll">
-                    <div class="stat">
-                        <span class="stat-number" data-count="500">0</span><span class="stat-plus">+</span>
-                        <span class="stat-label">Студенттер</span>
-                    </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat">
-                        <span class="stat-number" data-count="3">0</span>
-                        <span class="stat-label">Тарифтер</span>
-                    </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat">
-                        <span class="stat-number" data-count="5">0</span>
-                        <span class="stat-label">Модулдар</span>
-                    </div>
-                </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="hero-label" data-animate="fade-up">Парикмахер-стилист · 10+ лет опыта</p>
+          <h1 class="hero-title" data-animate="split">Алтынай Зарылбекова</h1>
+          <p class="hero-tagline" data-animate="fade-up">От ухода за волосами до стрижек и укладок — освойте профессию салонного мастера, не выходя из дома</p>
+
+          <!-- #3 Stats with separators -->
+          <div class="hero-stats" data-animate="fade-up">
+            <div class="stat">
+              <span class="stat-num" data-count="4">0</span>
+              <span class="stat-label">тарифа</span>
             </div>
-            <div class="hero-image animate-on-scroll">
-                <div class="hero-image-wrapper">
-                    <div class="hero-image-glow"></div>
-                    <img src="images/no_back_img.png" alt="Altynai - Курстун автору">
-                    <div class="hero-image-ring"></div>
-                    <div class="hero-image-ring ring-2"></div>
-                </div>
-                <div class="floating-card card-1">
-                    <span class="card-emoji">💇‍♀️</span>
-                    <span>Чач кыркуу</span>
-                </div>
-                <div class="floating-card card-2">
-                    <span class="card-emoji">🎨</span>
-                    <span>Боёо</span>
-                </div>
-                <div class="floating-card card-3">
-                    <span class="card-emoji">💄</span>
-                    <span>Прическа</span>
-                </div>
+            <div class="stat-sep" aria-hidden="true"></div>
+            <div class="stat">
+              <span class="stat-num" data-count="5">0</span>
+              <span class="stat-label">модулей</span>
             </div>
+            <div class="stat-sep" aria-hidden="true"></div>
+            <div class="stat">
+              <span class="stat-num" data-count="100" data-suffix="+">0</span>
+              <span class="stat-label">кейсов</span>
+            </div>
+            <div class="stat-sep" aria-hidden="true"></div>
+            <div class="stat">
+              <span class="stat-num" data-count="10" data-suffix="+">0</span>
+              <span class="stat-label">лет опыта</span>
+            </div>
+          </div>
+
+          <div class="hero-cta" data-animate="fade-up">
+            <a href="#pricing" class="btn btn-primary magnetic">Записаться на курс</a>
+            <a href="#program" class="btn btn-outline magnetic">Смотреть программу</a>
+          </div>
         </div>
-        <div class="hero-scroll-indicator">
-            <div class="scroll-line"></div>
+        <div class="hero-image" data-animate="fade-up">
+          <img src="altynai/no_back_img3.png" alt="Алтынай Зарылбекова — парикмахер-стилист" width="540" height="720">
         </div>
+      </div>
+      <div class="hero-scroll-hint" aria-hidden="true"><span></span></div>
     </section>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="section-container">
-            <div class="about-grid">
-                <div class="about-images animate-on-scroll">
-                    <div class="about-img-main">
-                        <img src="images/no_back_img2.png" alt="Altynai">
-                    </div>
-                    <div class="about-img-secondary">
-                        <img src="images/no_back_img3.png" alt="Altynai иштеп жатат">
-                    </div>
-                    <div class="about-decoration">
-                        <div class="deco-circle"></div>
-                        <div class="deco-dots"></div>
-                    </div>
-                </div>
-                <div class="about-content">
-                    <div class="section-label animate-on-scroll">Мен жөнүндө</div>
-                    <h2 class="section-title animate-on-scroll">Салам, мен <span class="gradient-text">Altynai</span> 👋
-                    </h2>
-                    <p class="about-text animate-on-scroll">Профессионалдуу чач тармактоочу жана стилист. Мен сизди
-                        үйдөн чыкпай эле кесипти өздөштүрүүгө жардам берем. Менин курсум практикага негизделген —
-                        баардык сабактар видео форматта, кадам-кадам менен көрсөтүлөт.</p>
-                    <div class="about-features animate-on-scroll">
-                        <div class="feature">
-                            <div class="feature-icon">🎥</div>
-                            <div>
-                                <h4>Видео сабактар</h4>
-                                <p>Даяр форматтагы видео курстар</p>
-                            </div>
-                        </div>
-                        <div class="feature">
-                            <div class="feature-icon">📱</div>
-                            <div>
-                                <h4>Telegram канал</h4>
-                                <p>Сабактар Telegram каналда берилет</p>
-                            </div>
-                        </div>
-                        <div class="feature">
-                            <div class="feature-icon">🔄</div>
-                            <div>
-                                <h4>Кайтарым байланыш</h4>
-                                <p>Суроолоруңузга жооп алыңыз</p>
-                            </div>
-                        </div>
-                        <div class="feature">
-                            <div class="feature-icon">⏰</div>
-                            <div>
-                                <h4>2 ай доступ</h4>
-                                <p>Материалдарга кирүү мүмкүнчүлүгү</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- About -->
+    <section class="section about" id="about">
+      <div class="container about-inner">
+        <div class="about-text-col">
+          <p class="section-label" data-animate="fade-up">О курсе</p>
+          <h2 class="section-heading" data-animate="split">Станьте мастером парикмахерского дела</h2>
+          <p class="about-lead" data-animate="fade-up">Курс для тех, кто хочет освоить профессию с нуля или прокачать навыки. Уход за волосами, домашнее окрашивание, мужские и женские стрижки, причёски — всё в видеоформате.</p>
+          <p class="about-desc" data-animate="fade-up">Уроки приходят в Telegram. Доступ к материалам — от 2 до 3 месяцев. На тарифах с поддержкой куратор отвечает в WhatsApp.</p>
         </div>
+        <!-- #2 Before/After slider -->
+        <div class="about-img-col" data-animate="reveal-img">
+          <div class="ba-slider" id="ba-slider">
+            <img src="altynai/IMG_2328.JPG" alt="До" class="ba-before" draggable="false">
+            <img src="altynai/IMG_2329.JPG" alt="После" class="ba-after" draggable="false">
+            <div class="ba-handle" id="ba-handle">
+              <div class="ba-line"></div>
+              <div class="ba-circle">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9,18 15,12 9,6"/></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15,18 9,12 15,6"/></svg>
+              </div>
+            </div>
+            <span class="ba-label ba-label--before">До</span>
+            <span class="ba-label ba-label--after">После</span>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Courses Section -->
-    <section class="courses" id="courses">
-        <div class="section-container">
-            <div class="section-label animate-on-scroll center">Курстар</div>
-            <h2 class="section-title animate-on-scroll center">Өзүңүзгө ылайык <span
-                    class="gradient-text">тарифти</span> тандаңыз</h2>
-            <p class="section-subtitle animate-on-scroll center">Баштоочудан профессионалга чейин — ар бир тариф сиздин
-                муктаждыктарыңыз үчүн</p>
-
-            <div class="pricing-grid">
-                <!-- Tariff 1 -->
-                <div class="pricing-card animate-on-scroll">
-                    <div class="pricing-header">
-                        <div class="pricing-tier">1-Тариф</div>
-                        <h3 class="pricing-name">Чач Боёо</h3>
-                        <div class="pricing-price">
-                            <span class="price-old">1500 сом</span>
-                            <span class="price-new">500 <small>сом</small></span>
-                        </div>
-                        <div class="pricing-format">📹 Даяр видео формат • 2 ай доступ</div>
-                    </div>
-                    <ul class="pricing-features">
-                        <li><span class="check">✓</span> Керектелүүчү материалдар</li>
-                        <li><span class="check">✓</span> Чачка уход кылуу (шампунь, гель, масло, спрей)</li>
-                        <li><span class="check">✓</span> Укладка жасоо (кыска, орто, узун)</li>
-                        <li><span class="check">✓</span> Краскалар боюнча толук маалымат</li>
-                        <li><span class="check">✓</span> Седина менен иштөө</li>
-                        <li><span class="check">✓</span> 3 түс чыгарып боёо техникасы</li>
-                    </ul>
-                    <a href="https://www.instagram.com/altynai_vizazhist" target="_blank" rel="noopener noreferrer"
-                        class="btn btn-card">Катталуу →</a>
-                </div>
-
-                <!-- Tariff 2 -->
-                <div class="pricing-card popular animate-on-scroll">
-                    <div class="popular-badge">🔥 Популярдуу</div>
-                    <div class="pricing-header">
-                        <div class="pricing-tier">2-Тариф</div>
-                        <h3 class="pricing-name">Чач Кыркуу</h3>
-                        <div class="pricing-price">
-                            <span class="price-old">19 000 сом</span>
-                            <span class="price-new">999 <small>сом</small></span>
-                        </div>
-                        <div class="pricing-format">📱 Telegram канал • 1 ай курс • 2 ай доступ</div>
-                    </div>
-                    <ul class="pricing-features">
-                        <li><span class="check">✓</span> Балдар чачын кыркуу</li>
-                        <li><span class="check">✓</span> Спортивная стрижка</li>
-                        <li><span class="check">✓</span> Модельный стрижка</li>
-                        <li><span class="check">✓</span> Аялдар чачын кыркуу</li>
-                        <li><span class="check">✓</span> Лесенка, Каскад, Каре</li>
-                        <li><span class="check">✓</span> Насадкалар боюнча түшүнүк</li>
-                    </ul>
-                    <a href="https://www.instagram.com/altynai_vizazhist" target="_blank" rel="noopener noreferrer"
-                        class="btn btn-primary btn-card">Катталуу →</a>
-                </div>
-
-                <!-- Tariff 3 -->
-                <div class="pricing-card premium animate-on-scroll">
-                    <div class="premium-badge">👑 Толук курс</div>
-                    <div class="pricing-header">
-                        <div class="pricing-tier">3-Тариф</div>
-                        <h3 class="pricing-name">VIP Пакет</h3>
-                        <div class="pricing-price">
-                            <span class="price-old">30 000 сом</span>
-                            <span class="price-new">3000 <small>сом</small></span>
-                        </div>
-                        <div class="pricing-format">📱 Telegram + Кайтарым байланыш • 2 ай доступ</div>
-                    </div>
-                    <ul class="pricing-features">
-                        <li><span class="check">✓</span> <strong>5 модуль:</strong> Толук программа</li>
-                        <li><span class="check">✓</span> Чачка уход + Укладка</li>
-                        <li><span class="check">✓</span> Чач боёо (баардык түрлөрү)</li>
-                        <li><span class="check">✓</span> Балдар + Аялдар стрижкасы</li>
-                        <li><span class="check">✓</span> Прическалар (6 түрү)</li>
-                        <li><span class="check">✓</span> Голливуд локондору</li>
-                        <li><span class="check">✓</span> Кайтарым байланыш ✅</li>
-                    </ul>
-                    <a href="https://www.instagram.com/altynai_vizazhist" target="_blank" rel="noopener noreferrer"
-                        class="btn btn-premium btn-card">Катталуу →</a>
-                </div>
+    <!-- #4 Audience grid -->
+    <section class="section audience" id="audience">
+      <div class="container">
+        <p class="section-label" data-animate="fade-up">Для кого</p>
+        <h2 class="section-heading" data-animate="split">Этот курс подойдёт вам</h2>
+        <div class="audience-grid">
+          <div class="audience-card" data-animate="fade-up">
+            <div class="audience-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a5 5 0 015 5c0 2.76-2.24 5-5 5s-5-2.24-5-5a5 5 0 015-5z"/><path d="M20 21c0-3.87-3.58-7-8-7s-8 3.13-8 7"/></svg>
             </div>
+            <h3>Начинающие</h3>
+            <p>Никогда не стригли? Не беда. Курс ведёт от самых основ к уверенному уровню.</p>
+          </div>
+          <div class="audience-card" data-animate="fade-up">
+            <div class="audience-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 000-7.78z"/></svg>
+            </div>
+            <h3>Мамы в декрете</h3>
+            <p>Учитесь дома, в удобное время. Видеоуроки доступны когда вам удобно.</p>
+          </div>
+          <div class="audience-card" data-animate="fade-up">
+            <div class="audience-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+            </div>
+            <h3>Практикующие мастера</h3>
+            <p>Прокачайте навыки: новые техники, тренды, подход к сложным случаям.</p>
+          </div>
+          <div class="audience-card" data-animate="fade-up">
+            <div class="audience-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/></svg>
+            </div>
+            <h3>Желающие подрабатывать</h3>
+            <p>Новая профессия за 1–3 месяца. Начните принимать клиентов дома.</p>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Course Program Detail (VIP) -->
-    <section class="program" id="program">
-        <div class="section-container">
-            <div class="section-label animate-on-scroll center">VIP Программа</div>
-            <h2 class="section-title animate-on-scroll center">3-Тарифтин <span class="gradient-text">5 модулу</span>
-            </h2>
+    <!-- Program (Timeline) — #7 Icons instead of numbers -->
+    <section class="section program" id="program">
+      <div class="container">
+        <p class="section-label" data-animate="fade-up">Программа</p>
+        <h2 class="section-heading" data-animate="split">5 модулей — от основ до мастерства</h2>
+        <div class="timeline">
+          <div class="timeline-line" aria-hidden="true"><div class="timeline-progress"></div></div>
 
-            <div class="modules-timeline">
-                <div class="module-item animate-on-scroll">
-                    <div class="module-number">01</div>
-                    <div class="module-content">
-                        <h3>Киришүү & Укладка</h3>
-                        <p>Керектелүүчү материалдар, чачка уход кылуу, укладка жасоо (кыска, орто, узун чачтарга)</p>
-                    </div>
-                </div>
-                <div class="module-item animate-on-scroll">
-                    <div class="module-number">02</div>
-                    <div class="module-content">
-                        <h3>Чач Боёо</h3>
-                        <p>Краскалар боюнча маалымат, аллергия анализи, чач структурасы, седина менен иштөө, 3 түс
-                            техникасы</p>
-                    </div>
-                </div>
-                <div class="module-item animate-on-scroll">
-                    <div class="module-number">03</div>
-                    <div class="module-content">
-                        <h3>Балдар Стрижкасы</h3>
-                        <p>Спортивная, модельный стрижка, насадкалар боюнча түшүнүк</p>
-                    </div>
-                </div>
-                <div class="module-item animate-on-scroll">
-                    <div class="module-number">04</div>
-                    <div class="module-content">
-                        <h3>Аялдар Стрижкасы</h3>
-                        <p>Лесенка, Каскад, Каре — баардык техникалар</p>
-                    </div>
-                </div>
-                <div class="module-item animate-on-scroll">
-                    <div class="module-number">05</div>
-                    <div class="module-content">
-                        <h3>Прическалар</h3>
-                        <p>Хвостик, пучок, голливуд локондору — 6 түрдүү прическа</p>
-                    </div>
-                </div>
+          <div class="timeline-item" data-animate="fade-up">
+            <div class="timeline-marker"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.24 12.24a6 6 0 00-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg></div>
+            <div class="timeline-card">
+              <h3>Уход и укладка</h3>
+              <p>Материалы, шампуни, масла. Укладка на короткие, средние, длинные волосы.</p>
             </div>
+          </div>
+
+          <div class="timeline-item" data-animate="fade-up">
+            <div class="timeline-marker"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+            <div class="timeline-card">
+              <h3>Домашнее окрашивание</h3>
+              <p>Седина, смешанные и тёмные волосы. Аллергия, время выдержки, техника в 3 цвета.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-animate="fade-up">
+            <div class="timeline-marker"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="6" r="3"/><path d="M6 9v12"/><path d="M13 6h3a2 2 0 012 2v1"/></svg></div>
+            <div class="timeline-card">
+              <h3>Мужские и детские стрижки</h3>
+              <p>Спортивная, модельная стрижка. Насадки, техники, «под ноль».</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-animate="fade-up">
+            <div class="timeline-marker"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3v18"/><path d="M18 3v18"/><path d="M6 8h12"/><path d="M6 16h12"/></svg></div>
+            <div class="timeline-card">
+              <h3>Женские стрижки</h3>
+              <p>Лесенка, каскад, каре — с пошаговым разбором на практике.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-animate="fade-up">
+            <div class="timeline-marker"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 0110 10c0 5.52-4.48 10-10 10S2 17.52 2 12"/><path d="M12 6v6l4 2"/></svg></div>
+            <div class="timeline-card">
+              <h3>Причёски и локоны</h3>
+              <p>Хвосты, пучки, голливудские локоны, классический и набережный пучок.</p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section class="gallery" id="gallery">
-        <div class="section-container">
-            <div class="section-label animate-on-scroll center">Галерея</div>
-            <h2 class="section-title animate-on-scroll center">Менин <span class="gradient-text">иштерим</span> & <span
-                    class="gradient-text">отзывы</span></h2>
-
-            <div class="gallery-grid">
-                <div class="gallery-item video-item animate-on-scroll">
-                    <video src="videos/IMG_2311.MP4" muted loop playsinline preload="metadata"></video>
-                    <div class="gallery-overlay">
-                        <span class="play-icon">▶</span>
-                    </div>
-                    <button class="sound-btn" aria-label="Toggle sound">
-                        <svg class="icon-muted" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2">
-                            <path d="M11 5L6 9H2v6h4l5 4V5z" />
-                            <line x1="23" y1="9" x2="17" y2="15" />
-                            <line x1="17" y1="9" x2="23" y2="15" />
-                        </svg>
-                        <svg class="icon-unmuted" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" style="display:none">
-                            <path d="M11 5L6 9H2v6h4l5 4V5z" />
-                            <path d="M19.07 4.93a10 10 0 0 1 0 14.14" />
-                            <path d="M15.54 8.46a5 5 0 0 1 0 7.07" />
-                        </svg>
-                    </button>
-                    <div class="video-progress">
-                        <div class="video-progress-fill"></div>
-                    </div>
-                </div>
-                <div class="gallery-item video-item animate-on-scroll">
-                    <video src="videos/IMG_2312.MP4" muted loop playsinline preload="metadata"></video>
-                    <div class="gallery-overlay">
-                        <span class="play-icon">▶</span>
-                    </div>
-                    <button class="sound-btn" aria-label="Toggle sound">
-                        <svg class="icon-muted" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2">
-                            <path d="M11 5L6 9H2v6h4l5 4V5z" />
-                            <line x1="23" y1="9" x2="17" y2="15" />
-                            <line x1="17" y1="9" x2="23" y2="15" />
-                        </svg>
-                        <svg class="icon-unmuted" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" style="display:none">
-                            <path d="M11 5L6 9H2v6h4l5 4V5z" />
-                            <path d="M19.07 4.93a10 10 0 0 1 0 14.14" />
-                            <path d="M15.54 8.46a5 5 0 0 1 0 7.07" />
-                        </svg>
-                    </button>
-                    <div class="video-progress">
-                        <div class="video-progress-fill"></div>
-                    </div>
-                </div>
-                <div class="gallery-item video-item animate-on-scroll">
-                    <video src="videos/IMG_2313.MP4" muted loop playsinline preload="metadata"></video>
-                    <div class="gallery-overlay">
-                        <span class="play-icon">▶</span>
-                    </div>
-                    <button class="sound-btn" aria-label="Toggle sound">
-                        <svg class="icon-muted" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2">
-                            <path d="M11 5L6 9H2v6h4l5 4V5z" />
-                            <line x1="23" y1="9" x2="17" y2="15" />
-                            <line x1="17" y1="9" x2="23" y2="15" />
-                        </svg>
-                        <svg class="icon-unmuted" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" style="display:none">
-                            <path d="M11 5L6 9H2v6h4l5 4V5z" />
-                            <path d="M19.07 4.93a10 10 0 0 1 0 14.14" />
-                            <path d="M15.54 8.46a5 5 0 0 1 0 7.07" />
-                        </svg>
-                    </button>
-                    <div class="video-progress">
-                        <div class="video-progress-fill"></div>
-                    </div>
-                </div>
-                <div class="gallery-item video-item animate-on-scroll">
-                    <video src="videos/IMG_2314.MP4" muted loop playsinline preload="metadata"></video>
-                    <div class="gallery-overlay">
-                        <span class="play-icon">▶</span>
-                    </div>
-                    <button class="sound-btn" aria-label="Toggle sound">
-                        <svg class="icon-muted" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2">
-                            <path d="M11 5L6 9H2v6h4l5 4V5z" />
-                            <line x1="23" y1="9" x2="17" y2="15" />
-                            <line x1="17" y1="9" x2="23" y2="15" />
-                        </svg>
-                        <svg class="icon-unmuted" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" style="display:none">
-                            <path d="M11 5L6 9H2v6h4l5 4V5z" />
-                            <path d="M19.07 4.93a10 10 0 0 1 0 14.14" />
-                            <path d="M15.54 8.46a5 5 0 0 1 0 7.07" />
-                        </svg>
-                    </button>
-                    <div class="video-progress">
-                        <div class="video-progress-fill"></div>
-                    </div>
-                </div>
-                <div class="gallery-item video-item animate-on-scroll">
-                    <video src="videos/IMG_2316.MP4" muted loop playsinline preload="metadata"></video>
-                    <div class="gallery-overlay">
-                        <span class="play-icon">▶</span>
-                    </div>
-                    <button class="sound-btn" aria-label="Toggle sound">
-                        <svg class="icon-muted" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2">
-                            <path d="M11 5L6 9H2v6h4l5 4V5z" />
-                            <line x1="23" y1="9" x2="17" y2="15" />
-                            <line x1="17" y1="9" x2="23" y2="15" />
-                        </svg>
-                        <svg class="icon-unmuted" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" style="display:none">
-                            <path d="M11 5L6 9H2v6h4l5 4V5z" />
-                            <path d="M19.07 4.93a10 10 0 0 1 0 14.14" />
-                            <path d="M15.54 8.46a5 5 0 0 1 0 7.07" />
-                        </svg>
-                    </button>
-                    <div class="video-progress">
-                        <div class="video-progress-fill"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- Gallery -->
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <p class="section-label" data-animate="fade-up">Работы</p>
+        <h2 class="section-heading" data-animate="split">Результаты учениц</h2>
+      </div>
+      <div class="gallery-track">
+        <div class="gallery-item"><img src="altynai/IMG_2326.JPG" alt="Работа 1" loading="lazy"></div>
+        <div class="gallery-item"><img src="altynai/IMG_2327.JPG" alt="Работа 2" loading="lazy"></div>
+        <div class="gallery-item"><img src="altynai/IMG_2328.JPG" alt="Работа 3" loading="lazy"></div>
+        <div class="gallery-item"><img src="altynai/IMG_2329.JPG" alt="Работа 4" loading="lazy"></div>
+        <div class="gallery-item"><img src="altynai/no_back_img.png" alt="Работа 5" loading="lazy"></div>
+        <div class="gallery-item"><img src="altynai/no_back_img2.png" alt="Работа 6" loading="lazy"></div>
+      </div>
     </section>
 
-    <!-- Instagram CTA Section -->
-    <section class="instagram-cta" id="contact">
-        <div class="section-container">
-            <div class="cta-card animate-on-scroll">
-                <div class="cta-bg-shapes">
-                    <div class="cta-shape cta-shape-1"></div>
-                    <div class="cta-shape cta-shape-2"></div>
-                    <div class="cta-shape cta-shape-3"></div>
-                </div>
-                <div class="cta-content">
-                    <div class="cta-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5">
-                            <rect x="2" y="2" width="20" height="20" rx="5" />
-                            <circle cx="12" cy="12" r="5" />
-                            <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" />
-                        </svg>
-                    </div>
-                    <h2 class="cta-title">Instagramга жазылыңыз!</h2>
-                    <p class="cta-text">Жаңы иштер, акциялар жана сабактар жөнүндө биринчилерден болуп билиңиз</p>
-                    <a href="https://www.instagram.com/altynai_vizazhist" target="_blank" rel="noopener noreferrer"
-                        class="btn btn-instagram">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <rect x="2" y="2" width="20" height="20" rx="5" />
-                            <circle cx="12" cy="12" r="5" />
-                            <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" />
-                        </svg>
-                        <span>@altynai_vizazhist</span>
-                    </a>
-                </div>
-                <div class="cta-images">
-                    <img src="images/no_back_img.png" alt="Altynai" class="cta-author-img">
-                </div>
+    <!-- Pricing — #8 Progress bars -->
+    <section class="section pricing" id="pricing">
+      <div class="container">
+        <p class="section-label" data-animate="fade-up">Тарифы</p>
+        <h2 class="section-heading" data-animate="split">Выберите свой формат</h2>
+        <div class="pricing-grid">
+          <article class="pricing-card tilt-card" data-animate="card-up">
+            <div class="pricing-top">
+              <span class="pricing-num">01</span>
+              <h3 class="pricing-name">Базовый</h3>
+              <p class="pricing-desc">Уход, укладка, окрашивание</p>
             </div>
+            <div class="pricing-bar"><div class="pricing-bar-fill" style="--fill:20%"></div><span>1 из 5 модулей</span></div>
+            <div class="pricing-price"><span class="price-amount">500 <small>сом</small></span></div>
+            <ul class="pricing-features">
+              <li>Онлайн, самостоятельно</li>
+              <li>Куратор 1 месяц</li>
+              <li>Доступ 2 месяца</li>
+              <li>Видеоуроки в Telegram</li>
+            </ul>
+            <a href="https://wa.me/996XXXXXXXXX?text=Хочу Тариф 1 (Базовый)" class="btn btn-card magnetic" target="_blank" rel="noopener">Записаться</a>
+          </article>
+
+          <article class="pricing-card tilt-card" data-animate="card-up">
+            <div class="pricing-top">
+              <span class="pricing-num">02</span>
+              <h3 class="pricing-name">Стандарт</h3>
+              <p class="pricing-desc">+ Стрижки мужские, детские, женские</p>
+            </div>
+            <div class="pricing-bar"><div class="pricing-bar-fill" style="--fill:40%"></div><span>2 из 5 модулей</span></div>
+            <div class="pricing-price">
+              <span class="price-amount">999 <small>сом</small></span>
+            </div>
+            <ul class="pricing-features">
+              <li>Онлайн-формат</li>
+              <li>Куратор в WhatsApp, 1 месяц</li>
+              <li>Видеоуроки в Telegram</li>
+              <li>Доступ 2 месяца</li>
+            </ul>
+            <a href="https://wa.me/996XXXXXXXXX?text=Хочу Тариф 2 (Стандарт)" class="btn btn-card magnetic" target="_blank" rel="noopener">Записаться</a>
+          </article>
+
+          <article class="pricing-card pricing-card--featured tilt-card" data-animate="card-up">
+            <span class="card-badge">Популярный</span>
+            <div class="pricing-top">
+              <span class="pricing-num">03</span>
+              <h3 class="pricing-name">Полный курс</h3>
+              <p class="pricing-desc">Все 5 модулей + обратная связь</p>
+            </div>
+            <div class="pricing-bar"><div class="pricing-bar-fill" style="--fill:100%"></div><span>5 из 5 модулей</span></div>
+            <div class="pricing-price">
+              <span class="price-amount">3 000 <small>сом</small></span>
+            </div>
+            <ul class="pricing-features">
+              <li>Онлайн-формат</li>
+              <li>Обратная связь от мастера и куратора</li>
+              <li>Видеоуроки в Telegram, 1 месяц</li>
+              <li>Доступ 3 месяца</li>
+            </ul>
+            <a href="https://wa.me/996XXXXXXXXX?text=Хочу Тариф 3 (Полный курс)" class="btn btn-card magnetic" target="_blank" rel="noopener">Записаться</a>
+          </article>
+
+          <article class="pricing-card tilt-card" data-animate="card-up">
+            <div class="pricing-top">
+              <span class="pricing-num">04</span>
+              <h3 class="pricing-name">VIP</h3>
+              <p class="pricing-desc">Личное обучение с Алтынай</p>
+            </div>
+            <div class="pricing-bar"><div class="pricing-bar-fill" style="--fill:100%"></div><span>5 из 5 + менторство</span></div>
+            <div class="pricing-price"><span class="price-amount">10 000 <small>сом</small></span></div>
+            <ul class="pricing-features">
+              <li>Личная обратная связь с мастером</li>
+              <li>Персональный контроль</li>
+              <li>Видеоуроки в Telegram, 1 месяц</li>
+              <li>Доступ 3 месяца</li>
+            </ul>
+            <a href="https://wa.me/996XXXXXXXXX?text=Хочу VIP тариф" class="btn btn-card magnetic" target="_blank" rel="noopener">Записаться</a>
+          </article>
         </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="section-container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <span class="footer-logo">Altynai</span>
-                    <p>Профессионалдуу чач тармактоо курсу</p>
-                </div>
-                <div class="footer-links">
-                    <a href="#hero">Башкы</a>
-                    <a href="#about">Мен жөнүндө</a>
-                    <a href="#courses">Курстар</a>
-                    <a href="#gallery">Галерея</a>
-                </div>
-                <div class="footer-social">
-                    <a href="https://www.instagram.com/altynai_vizazhist" target="_blank" rel="noopener noreferrer"
-                        class="social-link" aria-label="Instagram">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <rect x="2" y="2" width="20" height="20" rx="5" />
-                            <circle cx="12" cy="12" r="5" />
-                            <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Altynai. Бардык укуктар корголгон.</p>
-            </div>
+    <!-- #5 Testimonials -->
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <p class="section-label" data-animate="fade-up">Отзывы</p>
+        <h2 class="section-heading" data-animate="split">Что говорят ученицы</h2>
+        <div class="reviews-track">
+          <blockquote class="review-card" data-animate="fade-up">
+            <p>«Раньше боялась даже подровнять кончики. После курса уверенно стригу подруг и семью. Алтынай объясняет так, что всё понятно с первого раза.»</p>
+            <footer><strong>Айгуль</strong><span>Тариф 3</span></footer>
+          </blockquote>
+          <blockquote class="review-card" data-animate="fade-up">
+            <p>«В декрете нашла время для себя. Теперь подрабатываю — стригу соседок и знакомых. Окупила курс за неделю!»</p>
+            <footer><strong>Нуржан</strong><span>Тариф 2</span></footer>
+          </blockquote>
+          <blockquote class="review-card" data-animate="fade-up">
+            <p>«VIP-тариф того стоит. Алтынай лично разбирала мои ошибки. За месяц вышла на совсем другой уровень.»</p>
+            <footer><strong>Динара</strong><span>VIP</span></footer>
+          </blockquote>
         </div>
-    </footer>
+        <div style="margin-top:24px">
+          <a href="https://www.instagram.com/altynai_hair_studio" class="btn btn-outline magnetic" target="_blank" rel="noopener" data-animate="fade-up">Больше отзывов в Instagram</a>
+        </div>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
+    <!-- Author -->
+    <section class="section author" id="author">
+      <div class="container author-inner">
+        <div class="author-photo-col" data-animate="reveal-img">
+          <div class="img-reveal-wrap">
+            <img src="altynai/IMG_2327.JPG" alt="Алтынай Зарылбекова" loading="lazy" width="480" height="600">
+          </div>
+        </div>
+        <div class="author-text-col">
+          <p class="section-label" data-animate="fade-up">Автор курса</p>
+          <h2 class="section-heading" data-animate="split">Алтынай Зарылбекова</h2>
+          <p class="author-role" data-animate="fade-up">Парикмахер-стилист · Эксперт</p>
+          <p class="author-bio" data-animate="fade-up">Более 10 лет в профессии. Провела 100+ обучений. На курсе вы получите систему знаний — от ухода за волосами до стрижек и причёсок. Учитесь дома, в удобном темпе, с поддержкой мастера.</p>
+          <div class="author-links" data-animate="fade-up">
+            <a href="https://www.instagram.com/altynai_hair_studio" class="btn btn-outline magnetic" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+              Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ — #10 with aria-controls -->
+    <section class="section faq" id="faq">
+      <div class="container">
+        <p class="section-label" data-animate="fade-up">FAQ</p>
+        <h2 class="section-heading" data-animate="split">Частые вопросы</h2>
+        <div class="faq-list">
+          <div class="faq-item" data-animate="fade-up">
+            <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-p1" id="faq-t1">
+              <span>Для кого этот курс?</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-panel" id="faq-p1" role="region" aria-labelledby="faq-t1">
+              <p>Для начинающих и для тех, кто уже пробует стричь или красить: мамы, желающие подрабатывать, и все, кто хочет освоить парикмахерское дело дома.</p>
+            </div>
+          </div>
+          <div class="faq-item" data-animate="fade-up">
+            <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-p2" id="faq-t2">
+              <span>Как проходит обучение?</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-panel" id="faq-p2" role="region" aria-labelledby="faq-t2">
+              <p>Уроки приходят в закрытый Telegram-канал в формате видео. Смотрите в удобное время. На тарифах 2–4 куратор или мастер отвечают в WhatsApp.</p>
+            </div>
+          </div>
+          <div class="faq-item" data-animate="fade-up">
+            <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-p3" id="faq-t3">
+              <span>Сколько длится доступ?</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-panel" id="faq-p3" role="region" aria-labelledby="faq-t3">
+              <p>Тарифы 1 и 2 — 2 месяца. Тарифы 3 и 4 — 3 месяца. За это время можно пересматривать все уроки.</p>
+            </div>
+          </div>
+          <div class="faq-item" data-animate="fade-up">
+            <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-p4" id="faq-t4">
+              <span>В чём разница между тарифами?</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-panel" id="faq-p4" role="region" aria-labelledby="faq-t4">
+              <p>Тариф 1 — уход, укладка, окрашивание. Тариф 2 добавляет стрижки и куратора. Тариф 3 — все 5 модулей + обратная связь. VIP — личное обучение с Алтынай.</p>
+            </div>
+          </div>
+          <div class="faq-item" data-animate="fade-up">
+            <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-p5" id="faq-t5">
+              <span>Нужен ли опыт для начала?</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-panel" id="faq-p5" role="region" aria-labelledby="faq-t5">
+              <p>Нет. Курс построен от самых основ — с нуля до уверенного уровня. Подходит даже тем, кто никогда не держал ножницы.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner — #9 animated gradient -->
+    <section class="section cta-banner">
+      <div class="container cta-inner">
+        <h2 class="cta-heading" data-animate="split">Готовы начать?</h2>
+        <p class="cta-text" data-animate="fade-up">Запишитесь на курс и начните путь к новой профессии уже сегодня</p>
+        <a href="#pricing" class="btn btn-primary btn-lg magnetic" data-animate="fade-up">Выбрать тариф</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- #1 Floating mobile CTA -->
+  <a href="#pricing" class="floating-cta" id="floating-cta" aria-label="Записаться">Записаться</a>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#" class="footer-logo">Altynai<span>Hair</span></a>
+      <div class="footer-links">
+        <a href="https://www.instagram.com/altynai_hair_studio" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+          Instagram
+        </a>
+        <a href="https://t.me/" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0h-.056zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.492-1.302.484-.428-.008-1.252-.241-1.865-.44-.752-.244-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+          Telegram
+        </a>
+        <a href="https://wa.me/996XXXXXXXXX" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Altynai Hair Studio</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
 </body>
-
 </html>
