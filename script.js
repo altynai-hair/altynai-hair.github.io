@@ -270,26 +270,7 @@
     });
   }
 
-  // ===== Gallery Horizontal Scroll =====
-  var galleryTrack = document.querySelector('.gallery-track');
-  if (galleryTrack && window.innerWidth > 479) {
-    var totalScroll = galleryTrack.scrollWidth - window.innerWidth + 48;
-    gsap.to(galleryTrack, {
-      x: function () { return -totalScroll; },
-      ease: 'none',
-      scrollTrigger: {
-        trigger: '.gallery',
-        start: 'top top',
-        end: function () { return '+=' + totalScroll; },
-        scrub: 1,
-        pin: true,
-        invalidateOnRefresh: true,
-        anticipatePin: 1
-      }
-    });
-  }
-
-  // ===== #10 FAQ Accordion with fade-in =====
+  // ===== FAQ Accordion with fade-in =====
   document.querySelectorAll('.faq-trigger').forEach(function (trigger) {
     trigger.addEventListener('click', function () {
       var expanded = this.getAttribute('aria-expanded') === 'true';
@@ -359,37 +340,7 @@
     });
   }
 
-  // ===== #2 Before/After Slider =====
-  var baSlider = document.getElementById('ba-slider');
-  var baHandle = document.getElementById('ba-handle');
-  if (baSlider && baHandle) {
-    var baAfter = baSlider.querySelector('.ba-after');
-    var dragging = false;
-
-    function setSliderPosition(x) {
-      var rect = baSlider.getBoundingClientRect();
-      var pct = Math.max(0, Math.min(1, (x - rect.left) / rect.width));
-      var percent = pct * 100;
-      baAfter.style.clipPath = 'inset(0 0 0 ' + percent + '%)';
-      baHandle.style.left = percent + '%';
-    }
-
-    baSlider.addEventListener('pointerdown', function (e) {
-      dragging = true;
-      baSlider.setPointerCapture(e.pointerId);
-      setSliderPosition(e.clientX);
-    });
-
-    baSlider.addEventListener('pointermove', function (e) {
-      if (!dragging) return;
-      setSliderPosition(e.clientX);
-    });
-
-    baSlider.addEventListener('pointerup', function () { dragging = false; });
-    baSlider.addEventListener('pointercancel', function () { dragging = false; });
-  }
-
-  // ===== #1 Floating Mobile CTA =====
+  // ===== Floating Mobile CTA =====
   var floatingCta = document.getElementById('floating-cta');
   if (floatingCta) {
     ScrollTrigger.create({
