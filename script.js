@@ -350,19 +350,6 @@
         else floatingCta.classList.remove('is-visible');
       }
     });
-
-    var pricingSection = document.getElementById('pricing');
-    if (pricingSection) {
-      ScrollTrigger.create({
-        trigger: pricingSection,
-        start: 'top 80%',
-        end: 'bottom 20%',
-        onEnter: function () { floatingCta.classList.remove('is-visible'); },
-        onLeave: function () { floatingCta.classList.add('is-visible'); },
-        onEnterBack: function () { floatingCta.classList.remove('is-visible'); },
-        onLeaveBack: function () { floatingCta.classList.add('is-visible'); }
-      });
-    }
   }
 
 })();
